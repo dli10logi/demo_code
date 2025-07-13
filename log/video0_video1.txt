@@ -1,0 +1,43 @@
+有以下log，video0无法预览，video1可以预览，分析下可能是video0下方命令时出了什么问题
+[0 00:01:53.297] [APP INFO][dev:/dev/video0]:_UVC_Events_Process_Setup[1074]: ( bRequestType a1 bRequest 81 wValue 0d00 wIndex 0100 wLength 0008 )
+[0 00:01:53.641] [APP INFO][dev:/dev/video0]:_UVC_Events_Process_Class[1039]: bRequest 81 wValue d wIndex 1 wLength 8 
+[0 00:01:53.641] [APP INFO][dev:/dev/video0]:_UVC_Events_Process_Control[924]: control request (req 81 cs 0d) ]
+[0 00:01:53.641] [APP INFO][dev:/dev/video0]:_UVC_Events_Process_Setup[1074]: ( bRequestType a1 bRequest 81 wValue 0d00 wIndex 0100 wLength 0008 )
+[0 00:01:53.641] [APP INFO][dev:/dev/video0]:_UVC_Events_Process_Class[1039]: bRequest 81 wValue d wIndex 1 wLength 8 
+[0 00:01:53.641] [APP INFO][dev:/dev/video0]:_UVC_Events_Process_Control[924]: control request (req 81 cs 0d) ]
+[0 00:01:53.641] [APP INFO][dev:/dev/video0]:_UVC_Events_Process_Setup[1074]: ( bRequestType a1 bRequest 81 wValue 0b00 wIndex 0100 wLength 0002 )
+[0 00:01:53.641] [APP INFO][dev:/dev/video0]:_UVC_Events_Process_Class[1039]: bRequest 81 wValue b wIndex 1 wLength 2 
+[0 00:01:53.656] [APP INFO][dev:/dev/video0]:_UVC_Events_Process_Control[924]: control request (req 81 cs 0b) ]
+[0 00:01:53.656] [APP INFO][dev:/dev/video1]:_UVC_Events_Process_Setup[1074]: ( bRequestType a1 bRequest 81 wValue 0600 wIndex 0402 wLength 0009 )
+[0 00:01:53.656] [APP INFO][dev:/dev/video1]:_UVC_Events_Process_Class[1039]: bRequest 81 wValue 6 wIndex 4 wLength 9 
+[0 00:01:53.656] [APP INFO][dev:/dev/video1]:_UVC_Events_Process_Control[924]: control request (req 81 cs 06) ]
+[0 00:01:53.656] [APP INFO][dev:/dev/video1]:_UVC_Events_Process_Setup[1074]: ( bRequestType a1 bRequest 83 wValue 0900 wIndex 0402 wLength 0004 )
+[0 00:01:53.656] [APP INFO][dev:/dev/video1]:_UVC_Events_Process_Class[1039]: bRequest 83 wValue 9 wIndex 4 wLength 4 
+[0 00:01:53.656] [APP INFO][dev:/dev/video1]:_UVC_Events_Process_Control[924]: control request (req 83 cs 09) ]
+[0 00:01:53.656] [APP INFO][dev:/dev/video1]:_UVC_Events_Process_Setup[1074]: ( bRequestType a1 bRequest 81 wValue 0100 wIndex 0003 wLength 0022 )
+[0 00:01:53.672] [APP INFO][dev:/dev/video1]:_UVC_Events_Process_Class[1050]: bRequest 81 wValue 1 wIndex 0 wLength 22 
+[0 00:01:53.672] [APP INFO][dev:/dev/video1]:_UVC_Events_Process_Setup[1074]: ( bRequestType 21 bRequest 01 wValue 0100 wIndex 0003 wLength 0022 )
+[0 00:01:53.672] [APP INFO][dev:/dev/video1]:_UVC_Events_Process_Class[1050]: bRequest 1 wValue 1 wIndex 0 wLength 22 
+[0 00:01:53.672] [APP INFO][dev:/dev/video1]:_UVC_Events_Process_Data[1100]:  Probe control, length = 34 
+[0 00:01:53.672] [APP INFO][dev:/dev/video1]:_UVC_Fill_Streaming_Control[1563]:  (iformat 0 iframe 0 width 340 height 340 FrameRate 30.000000)
+[0 00:01:53.672] [APP INFO][dev:/dev/video1]:_UVC_Events_Process_Setup[1074]: ( bRequestType a1 bRequest 81 wValue 0100 wIndex 0003 wLength 0022 )
+[0 00:01:53.672] [APP INFO][dev:/dev/video1]:_UVC_Events_Process_Class[1050]: bRequest 81 wValue 1 wIndex 0 wLength 22 
+[0 00:01:53.688] [APP INFO][dev:/dev/video1]:_UVC_Events_Process_Setup[1074]: ( bRequestType a1 bRequest 83 wValue 0100 wIndex 0003 wLength 0022 )
+[0 00:01:53.688] [APP INFO][dev:/dev/video1]:_UVC_Events_Process_Class[1050]: bRequest 83 wValue 1 wIndex 0 wLength 22 
+[0 00:01:53.688] [APP INFO][dev:/dev/video1]:_UVC_Events_Process_Setup[1074]: ( bRequestType a1 bRequest 82 wValue 0100 wIndex 0003 wLength 0022 )
+[0 00:01:53.688] [APP INFO][dev:/dev/video1]:_UVC_Events_Process_Class[1050]: bRequest 82 wValue 1 wIndex 0 wLength 22 
+[0 00:01:53.688] [APP INFO][dev:/dev/video1]:_UVC_Events_Process_Setup[1074]: ( bRequestType a1 bRequest 83 wValue 0900 wIndex 0402 wLength 0004 )
+[0 00:01:53.688] [APP INFO][dev:/dev/video1]:_UVC_Events_Process_Class[1039]: bRequest 83 wValue 9 wIndex 4 wLength 4 
+[0 00:01:53.688] [APP INFO][dev:/dev/video1]:_UVC_Events_Process_Control[924]: control request (req 83 cs 09) ]
+[0 00:01:53.688] [APP INFO][dev:/dev/video1]:_UVC_Events_Process_Setup[1074]: ( bRequestType 21 bRequest 01 wValue 0100 wIndex 0003 wLength 0022 )
+[0 00:01:53.688] [APP INFO][dev:/dev/video1]:_UVC_Events_Process_Class[1050]: bRequest 1 wValue 1 wIndex 0 wLength 22 
+[0 00:01:53.688] [APP INFO][dev:/dev/video1]:_UVC_Events_Process_Data[1100]:  Probe control, length = 34 
+[0 00:01:53.860] [APP INFO][dev:/dev/video1]:_UVC_Fill_Streaming_Control[1563]:  (iformat 0 iframe 0 width 340 height 340 FrameRate 30.000000)
+[0 00:01:53.860] [APP INFO][dev:/dev/video1]:_UVC_Events_Process_Setup[1074]: ( bRequestType a1 bRequest 81 wValue 0100 wIndex 0003 wLength 0022 )
+[0 00:01:53.860] [APP INFO][dev:/dev/video1]:_UVC_Events_Process_Class[1050]: bRequest 81 wValue 1 wIndex 0 wLength 22 
+[0 00:01:53.860] [APP INFO][dev:/dev/video1]:_UVC_Events_Process_Setup[1074]: ( bRequestType 21 bRequest 01 wValue 0200 wIndex 0003 wLength 0022 )
+[0 00:01:53.860] [APP INFO][dev:/dev/video1]:_UVC_Events_Process_Class[1050]: bRequest 1 wValue 2 wIndex 0 wLength 22 
+[0 00:01:53.860] [APP INFO][dev:/dev/video1]:_UVC_Events_Process_Data[1112]:  Commit control, length = 34 
+[0 00:01:53.860] [APP INFO][dev:/dev/video1]:_UVC_Fill_Streaming_Control[1563]:  (iformat 0 iframe 0 width 340 height 340 FrameRate 30.000000)
+[0 00:01:53.860] [APP TRACE][dev:/dev/video1]:_UVC_Events_Process[1212]: streamon
+[0 00:01:53.860] [APP INFO][dev:/dev/video1]:_UVC_StartCapture[877]: 
